@@ -1,0 +1,7 @@
+{% macro Card(props) %}
+    <div class="component-card">
+        <div class="card-header">{{ props.header | safe }}</div>
+        <div class="card-body">{{ props.body | safe }}</div>
+        <div class="card-footer">{{ props.footer | safe }}</div>
+    </div>
+{% endmacro %}

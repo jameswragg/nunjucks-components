@@ -8,6 +8,7 @@ const app = express();
 nunjucks.configure(["views", "components"], {
   autoescape: true,
   express: app,
+  noCache: true
 });
 
 // Read the manifest file
@@ -41,6 +42,7 @@ app.get("/", (req, res) => {
     title: "Hello, Nunjucks!",
     content: "This is a Nunjucks component.",
     manifest: manifest["src/index.js"],
+    process
   });
 });
 
