@@ -1,3 +1,5 @@
+import "./Button.scss";
+
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".component-button");
   buttons.forEach((container) => {
