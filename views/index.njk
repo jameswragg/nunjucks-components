@@ -1,0 +1,30 @@
+{% from "../components/Button/Button.njk" import Button %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/{{ manifest.css }}">
+
+</head>
+<body>
+    {{ Button({
+        text: 'Click Me', 
+        type: 'primary'
+    }) }}
+    {{ Button({
+        text: 'Click Me', 
+        type: 'primary'
+    }) }}
+    {{ Button({
+        text: 'Click Me', 
+        type: 'primary'
+    }) }}
+
+    {# <script src="/scripts/main.js"></script> #}
+      <script type="module" src="/scripts/{{ manifest.file }}"></script>
+
+</body>
+</html>
+

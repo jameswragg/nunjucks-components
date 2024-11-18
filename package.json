@@ -1,0 +1,22 @@
+{
+  "name": "nunjucks-components",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "vite",
+    "start": "node server.js",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "James Wragg <james.wragg@madgex.com> (https://www.madgex.com/)",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "sass": "^1.81.0",
+    "vite": "^5.4.11"
+  }
+}

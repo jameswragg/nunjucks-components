@@ -1,0 +1,14 @@
+{% macro Button(props) %}
+    <div 
+        class="component-button" 
+        data-type="{{ props.type | default('default') }}"
+    >
+        <button 
+            class="btn btn-{{ props.type | default('default') }}"
+            {% if props.disabled %}disabled{% endif %}
+        >
+            {{ props.text | safe }}
+        </button>
+    </div>
+{% endmacro %}
+
